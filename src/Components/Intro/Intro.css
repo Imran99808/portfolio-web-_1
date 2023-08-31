@@ -1,0 +1,148 @@
+.i-wrapper{
+    /* background-color: red; */
+    display: flex;
+    margin-top: 6rem;
+     height: 77vh; 
+   
+}
+.i-left{
+     display: flex; 
+      flex-direction: column; 
+     position: relative;   
+    flex: 1;  
+     gap: 2rem; 
+    
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight:bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(3){
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.i-button{
+    width: 6rem;
+    height: 2rem;
+}
+.i-icons{
+    display: flex;
+    gap: 0rem;
+    margin-top: 1rem;
+}
+.i-icons>*{
+    transform: scale(0.5);
+}
+.i-icons>*:hover{
+     transform: scale(0.6); 
+    cursor: pointer;
+}
+
+.i-right{
+      flex: 1; 
+      position: relative; 
+   
+}
+.i-right>*{
+    position:absolute; 
+    z-index: 1;
+}
+.i-right>:nth-child(1){
+     transform: scale(0.69); 
+    left: -15%;
+    top:-9% ;
+}
+.i-right>:nth-child(2){
+    transform: scale(0.67);  
+    left: -3rem; 
+    top:-4.6rem ;  
+
+
+}
+.i-right>:nth-child(3){
+    transform: scale(1.4); 
+    left: 28%;
+}
+.i-right>:nth-child(4){
+    transform: scale(0.6); 
+    top: -19%; 
+    left: -30%;
+    border-radius: 50%;
+    padding: 0;
+    /* transform: translateX(0); */
+      
+   
+    animation-delay: 0.1s;
+}
+@keyframes about-imoji-animation{
+    60%{
+        left: -23%; 
+        /* animation: about-text-animation 1s ease-in-out forwards; */
+        
+    }
+    100%{
+       
+     left: -24%;
+    }
+} 
+ 
+.i-f-1{
+ top:-4%;
+ left:68%;
+ /* left: 64%; */
+ /* animation: about-fl1-animation 1s ease-in-out forwards;  */
+ animation-delay: 0.1s;
+}
+@keyframes about-fl1-animation{
+    50%{
+        left: 65%; 
+        /* animation: about-text-animation 1s ease-in-out forwards; */
+        
+    }
+    100%{
+       
+     left: 67%;
+    }
+} 
+.i-f-2{
+  top:18rem;
+  left:1rem;
+  
+  animation-delay: 0.1s;
+}
+@keyframes about-fl2-animation{
+    50%{
+        left: -1px; 
+        /* animation: about-text-animation 1s ease-in-out forwards; */
+        
+    }
+    100%{
+       
+     left: 0.7rem;
+    }
+} 
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+  
+    /* filter: blur(212px);  */
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+     filter: blur(72px); 
+}
+
